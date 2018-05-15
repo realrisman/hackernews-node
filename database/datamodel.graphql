@@ -4,3 +4,14 @@ type Link {
   description: String!
   url: String!
 }
+
+type User {
+  id: ID! @unique
+  name: String!
+  phones: [Phone!]!
+}
+
+type Phone {
+  id: ID! @unique
+  number: String!
+}
